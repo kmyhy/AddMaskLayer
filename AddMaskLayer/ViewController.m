@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "UIView+AddMaskLayer.h"
 
-@interface ViewController ()
+
+@interface ViewController (){
+    BOOL isMask ;
+}
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 @end
 
@@ -25,5 +30,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)click:(UIButton*)sender {
+    isMask =! isMask;
+    if(isMask){
+        [sender addMaskLayer:[UIColor colorWithWhite:1 alpha:0.6]];
+    }else{
+        [sender removeMaskLayer];
+    }
+}
 
 @end

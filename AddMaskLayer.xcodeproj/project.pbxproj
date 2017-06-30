@@ -13,6 +13,7 @@
 		12243A0F1F05FE660009BAFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12243A0D1F05FE660009BAFE /* Main.storyboard */; };
 		12243A111F05FE660009BAFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12243A101F05FE660009BAFE /* Assets.xcassets */; };
 		12243A141F05FE660009BAFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12243A121F05FE660009BAFE /* LaunchScreen.storyboard */; };
+		12243A1D1F05FEDB0009BAFE /* UIView+AddMaskLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 12243A1C1F05FEDB0009BAFE /* UIView+AddMaskLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		12243A101F05FE660009BAFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12243A131F05FE660009BAFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12243A151F05FE660009BAFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12243A1B1F05FEDB0009BAFE /* UIView+AddMaskLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AddMaskLayer.h"; sourceTree = "<group>"; };
+		12243A1C1F05FEDB0009BAFE /* UIView+AddMaskLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AddMaskLayer.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				12243A081F05FE660009BAFE /* AppDelegate.m */,
 				12243A0A1F05FE660009BAFE /* ViewController.h */,
 				12243A0B1F05FE660009BAFE /* ViewController.m */,
+				12243A1B1F05FEDB0009BAFE /* UIView+AddMaskLayer.h */,
+				12243A1C1F05FEDB0009BAFE /* UIView+AddMaskLayer.m */,
 				12243A0D1F05FE660009BAFE /* Main.storyboard */,
 				12243A101F05FE660009BAFE /* Assets.xcassets */,
 				12243A121F05FE660009BAFE /* LaunchScreen.storyboard */,
@@ -153,6 +158,7 @@
 			files = (
 				12243A0C1F05FE660009BAFE /* ViewController.m in Sources */,
 				12243A091F05FE660009BAFE /* AppDelegate.m in Sources */,
+				12243A1D1F05FEDB0009BAFE /* UIView+AddMaskLayer.m in Sources */,
 				12243A061F05FE660009BAFE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
