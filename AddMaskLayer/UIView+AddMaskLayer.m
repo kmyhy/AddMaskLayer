@@ -13,23 +13,20 @@
 @dynamic maskColoredLayer;
 
 -(CALayer*)maskColoredLayer{
-    CALayer* layer = objc_getAssociatedObject(self, @selector(maskColoredLayer));
-    if(!layer){
-        layer = [CALayer layer];
-        self.maskColoredLayer = layer;
-        layer.frame = self.bounds;
-        
-        layer.cornerRadius = self.layer.cornerRadius;
-        [self.layer insertSublayer:layer atIndex:100];
-        
-    }
-    return layer;
+    return objc_getAssociatedObject(self, @selector(maskColoredLayer));
 }
 -(void)setMaskColoredLayer:(CALayer *)layer{
     objc_setAssociatedObject(self, @selector(maskColoredLayer), layer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 -(void)addMaskLayer:(UIColor *)color{
+    if(self.maskColoredLayer==nil){
+        self.maskColoredLayer = [CALayer layer];
+        self.maskColoredLayer.frame = self.bounds;
+        
+        self.maskColoredLayer.cornerRadius = self.layer.cornerRadius;
+        [self.layer insertSublayer:self.maskColoredLayer atIndex:100];
+    }
     self.maskColoredLayer.backgroundColor = color.CGColor;
 }
 -(void)removeMaskLayer{
